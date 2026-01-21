@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Steganography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>🔐 Steganography</h1>
+
+    <h2>Encode Message</h2>
+    <input type="file" id="encodeImage">
+    <input type="text" id="watermark" placeholder="Enter the secret message">
+    <button onclick="encode()">Hide</button>
+    <canvas id="canvas"></canvas>
+    <button onclick="download()">Download Image</button>
+
+    <h2>Decode Message</h2>
+    <input type="file" id="decodeImage">
+    <button onclick="decode()">Reveal</button>
+    <p id="result"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
